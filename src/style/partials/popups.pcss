@@ -1,0 +1,91 @@
+/* Стилизация попапов (fancybox) */
+
+.fancybox-lock {
+    overflow: visible !important;
+}
+
+.fancybox-overlay {
+    background: rgba(#000, .6);
+}
+
+    .fancybox-skin {
+        background: #fff;
+        border-radius: 0;
+        box-shadow: none;
+
+        .fancybox-opened & {
+            box-shadow: 0 0 40px rgba(#000, .6);
+        }
+    }
+
+    .fancybox-close,
+    .fancybox-next span,
+    .fancybox-prev span {
+        background-size: auto auto;
+    }
+
+    .fancybox-close {
+        background-size: cover;
+        border: none;
+        top: $gutter;
+        right: $gutter;
+        width: 25px;
+        height: 25px;
+
+        &:hover {
+            
+        }
+
+        .fancybox-overlay_type_iframe & {
+            top: calc($gutter / 2);
+            right: calc($gutter / 2);
+        }
+    }
+
+    .fancybox-next,
+    .fancybox-prev {
+        span {
+            
+        }
+
+        &:hover {
+            span {
+                
+            }
+        }
+    }
+
+    .fancybox-prev {
+        span {
+            
+        }
+
+        &:hover {
+            span {
+                
+            }
+        }
+    }
+
+    .fancybox-next {
+        span {
+            
+        }
+
+        &:hover {
+            span {
+                
+            }
+        }
+    }
+
+.popup {
+    width: 600px;
+    padding: $gutter;
+    
+    @include clearfix;
+
+    &__hl {
+        font-size: 24px;
+    }
+}

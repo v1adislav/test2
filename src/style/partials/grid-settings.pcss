@@ -1,0 +1,29 @@
+/* Настройки адаптива */
+
+/* Изменение настроек сетки */
+$gutter: 32px;
+$column: 90px;
+$grid-columns: 12;
+$max-width: 1088px;
+
+/* Точки адаптива */
+$mobile-size: 479px;
+$mobile-size-min: 480px;
+$tablet-size: 767px;
+$tablet-size-min: 768px;
+$tablet-lg-size: 959px;
+$tablet-lg-size-min: 960px;
+$desktop-size: 1199px;
+$desktop-size-min: 1200px;
+
+/* Сокращения
+Пример использования: @media (--mobile) {}
+*/
+@custom-media --mobile (max-width: $mobile-size);
+@custom-media --mobile-min (min-width: $mobile-size-min);
+@custom-media --tablet (max-width: $tablet-size);
+@custom-media --tablet-min (min-width: $tablet-size-min);
+@custom-media --tablet-lg (max-width: $tablet-lg-size);
+@custom-media --tablet-lg-min (min-width: $tablet-lg-size-min);
+@custom-media --desktop (max-width: $desktop-size);
+@custom-media --desktop-min (max-width: $desktop-size-min);

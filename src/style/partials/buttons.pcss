@@ -1,0 +1,134 @@
+/* Стилизация кнопок */
+
+.btn,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    border: 1px solid transparent;
+    display: inline-block;
+    position: relative;
+    overflow: visible;
+    clear: both;
+    margin: 0 -4px calc($gutter / 2) 0;
+    padding: 0;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: top;
+    outline: none;
+    transition: all $time ease;
+
+    @include button-style(
+        #fff,
+        $cl-blue,
+        $cl-dk-blue,
+        $cl-lg-grey,
+
+        $cl-blue,
+        $cl-blue,
+        $cl-dk-blue,
+        $cl-lg-grey,
+
+        $cl-blue,
+        #fff,
+        #fff,
+        $cl-dk-grey
+    );
+    @include button-size(
+        $field-height,
+        1px,
+        15px,
+        14px
+    );
+
+    &:hover,
+    &.is-hover,
+    &:focus,
+    &.is-focus {
+        text-decoration: none;
+    }
+
+    &.is-disabled,
+    .is-disabled &,
+    &[disabled] {
+        cursor: default;
+        pointer-events: none;
+    }
+
+    & + & {
+        margin-left: calc($gutter / 2);
+    }
+
+    &:last-child,
+    &.pull-right,
+    &.pull-left {
+        margin-left: 0;
+    }
+
+    &.btn_block {
+        display: block;
+        width: 100%;
+
+        & + & {
+            margin-top: calc($gutter / 2);
+            margin-left: 0;
+        }
+    }
+
+    &.btn_link {
+        @include button-style(
+            transparent,
+            transparent,
+            transparent,
+            transparent,
+
+            transparent,
+            transparent,
+            transparent,
+            transparent,
+
+            $cl-blue,
+            $cl-dk-blue,
+            $cl-dk-blue,
+            $cl-dk-grey
+        );
+        @include button-size(
+            $field-height,
+            0,
+            0,
+            14px
+        );
+
+        &:hover,
+        &.is-hover,
+        &:focus,
+        &.is-focus {
+            text-decoration: underline;
+        }
+    }
+
+    &.btn_clean {
+        @include button-style(
+            transparent,
+            transparent,
+            transparent,
+            transparent,
+
+            transparent,
+            transparent,
+            transparent,
+            transparent,
+
+            #fff,
+            #fff,
+            #fff,
+            $cl-dk-grey
+        );
+        @include button-size(
+            $gutter,
+            0,
+            0,
+            14px
+        );
+    }
+}

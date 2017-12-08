@@ -1,0 +1,9 @@
+/* Очистка потока для блоков с плавающими элементами */
+
+@mixin clearfix {
+    &::after {
+        clear: both;
+        content: "";
+        display: block;
+    }
+}

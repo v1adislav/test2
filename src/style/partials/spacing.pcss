@@ -1,0 +1,273 @@
+/* Spacings
+   Использование: добавляются классы .m .m+ .mt++ .mv-- и т.д. (аналогично с padding)
+*/
+
+/* Переменные */
+
+$spacing\-\-: calc($gutter / 4);
+$spacing\-: calc($gutter / 2);
+$spacing: $gutter;
+$spacing\+: calc($gutter * 1.5);
+$spacing\+\+: calc($gutter * 2);
+
+/* Margin */
+.m {
+    margin: $spacing !important;
+
+    &0 { margin: 0 !important; }
+
+    &\-\- { margin: $spacing\-\- !important; }
+
+    &\- { margin: $spacing\- !important; }
+
+    &\+ { margin: $spacing\+ !important; }
+
+    &\+\+ { margin: $spacing\+\+ !important; }
+
+    &t {
+        margin-top: $spacing !important;
+
+        &0 { margin-top: 0 !important; }
+
+        &\-\- { margin-top: $spacing\-\- !important; }
+
+        &\- { margin-top: $spacing\- !important; }
+
+        &\+ { margin-top: $spacing\+ !important; }
+
+        &\+\+ { margin-top: $spacing\+\+ !important; }
+    }
+
+    &r {
+        margin-right: $spacing !important;
+
+        &0 { margin-right: 0 !important; }
+
+        &\-\- { margin-right: $spacing\-\- !important; }
+
+        &\- { margin-right: $spacing\- !important; }
+
+        &\+ { margin-right: $spacing\+ !important; }
+
+        &\+\+ { margin-right: $spacing\+\+ !important; }
+    }
+
+    &b {
+        margin-bottom: $spacing !important;
+
+        &0 { margin-bottom: 0 !important; }
+
+        &\-\- { margin-bottom: $spacing\-\- !important; }
+
+        &\- { margin-bottom: $spacing\- !important; }
+
+        &\+ { margin-bottom: $spacing\+ !important; }
+
+        &\+\+ { margin-bottom: $spacing\+\+ !important; }
+    }
+
+    &l {
+        margin-left: $spacing !important;
+
+        &0 { margin-left: 0 !important; }
+
+        &\-\- { margin-left: $spacing\-\- !important; }
+
+        &\- { margin-left: $spacing\- !important; }
+
+        &\+ { margin-left: $spacing\+ !important; }
+
+        &\+\+ { margin-left: $spacing\+\+ !important; }
+    }
+
+    &v {
+        margin-top: $spacing !important;
+        margin-bottom: $spacing !important;
+
+        &0 {
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+        }
+
+        &\-\- {
+            margin-top: $spacing\-\- !important;
+            margin-bottom: $spacing\-\- !important;
+        }
+
+        &\- {
+            margin-top: $spacing\- !important;
+            margin-bottom: $spacing\- !important;
+        }
+
+        &\+ {
+            margin-top: $spacing\+ !important;
+            margin-bottom: $spacing\+ !important;
+        }
+
+        &\+\+ {
+            margin-top: $spacing\+\+ !important;
+            margin-bottom: $spacing\+\+ !important;
+        }
+    }
+
+    &h {
+        margin-right: $spacing !important;
+        margin-left: $spacing !important;
+
+        &0 {
+            margin-right: 0 !important;
+            margin-left: 0 !important;
+        }
+
+        &\-\- {
+            margin-right: $spacing\-\- !important;
+            margin-left: $spacing\-\- !important;
+        }
+
+        &\- {
+            margin-right: $spacing\- !important;
+            margin-left: $spacing\- !important;
+        }
+
+        &\+ {
+            margin-right: $spacing\+ !important;
+            margin-left: $spacing\+ !important;
+        }
+
+        &\+\+ {
+            margin-right: $spacing\+\+ !important;
+            margin-left: $spacing\+\+ !important;
+        }
+    }
+}
+
+/* Padding */
+.p {
+    padding: $spacing !important;
+
+    &0 { padding: 0 !important; }
+
+    &\-\- { padding: $spacing\-\- !important; }
+
+    &\- { padding: $spacing\- !important; }
+
+    &\+ { padding: $spacing\+ !important; }
+
+    &\+\+ { padding: $spacing\+\+ !important; }
+
+    &t {
+        padding-top: $spacing !important;
+
+        &0 { padding-top: 0 !important; }
+
+        &\-\- { padding-top: $spacing\-\- !important; }
+
+        &\- { padding-top: $spacing\- !important; }
+
+        &\+ { padding-top: $spacing\+ !important; }
+
+        &\+\+ { padding-top: $spacing\+\+ !important; }
+    }
+
+    &r {
+        padding-right: $spacing !important;
+
+        &0 { padding-right: 0 !important; }
+
+        &\-\- { padding-right: $spacing\-\- !important; }
+
+        &\- { padding-right: $spacing\- !important; }
+
+        &\+ { padding-right: $spacing\+ !important; }
+
+        &\+\+ { padding-right: $spacing\+\+ !important; }
+    }
+
+    &b {
+        padding-bottom: $spacing !important;
+
+        &0 { padding-bottom: 0 !important; }
+
+        &\-\- { padding-bottom: $spacing\-\- !important; }
+
+        &\- { padding-bottom: $spacing\- !important; }
+
+        &\+ { padding-bottom: $spacing\+ !important; }
+
+        &\+\+ { padding-bottom: $spacing\+\+ !important; }
+    }
+
+    &l {
+        padding-left: $spacing !important;
+
+        &0 { padding-left: 0 !important; }
+
+        &\-\- { padding-left: $spacing\-\- !important; }
+
+        &\- { padding-left: $spacing\- !important; }
+
+        &\+ { padding-left: $spacing\+ !important; }
+
+        &\+\+ { padding-left: $spacing\+\+ !important; }
+    }
+
+    &v {
+        padding-top: $spacing !important;
+        padding-bottom: $spacing !important;
+
+        &0 {
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+        }
+
+        &\-\- {
+            padding-top: $spacing\-\- !important;
+            padding-bottom: $spacing\-\- !important;
+        }
+
+        &\- {
+            padding-top: $spacing\- !important;
+            padding-bottom: $spacing\- !important;
+        }
+
+        &\+ {
+            padding-top: $spacing\+ !important;
+            padding-bottom: $spacing\+ !important;
+        }
+
+        &\+\+ {
+            padding-top: $spacing\+\+ !important;
+            padding-bottom: $spacing\+\+ !important;
+        }
+    }
+
+    &h {
+        padding-right: $spacing !important;
+        padding-left: $spacing !important;
+
+        &0 {
+            padding-right: 0 !important;
+            padding-left: 0 !important;
+        }
+
+        &\-\- {
+            padding-right: $spacing\-\- !important;
+            padding-left: $spacing\-\- !important;
+        }
+
+        &\- {
+            padding-right: $spacing\- !important;
+            padding-left: $spacing\- !important;
+        }
+
+        &\+ {
+            padding-right: $spacing\+ !important;
+            padding-left: $spacing\+ !important;
+        }
+
+        &\+\+ {
+            padding-right: $spacing\+\+ !important;
+            padding-left: $spacing\+\+ !important;
+        }
+    }
+}
