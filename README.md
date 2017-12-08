@@ -16,12 +16,6 @@ gulp
 npm install -g gulp
 ```
 
-# Как и где работаем
-* рабочая директория: /src/
-* результат development: /build/
-* результат production: /local/templates/project_name/build/ или /bitrix/templates/project_name/build/ (пути для Bitrix)
-* readme: /README.md
-
 В проекте сборка фронтенда реализована с помощью gulp.
 Пакетный менеджер bower. По возможности все ставим через него.
 
@@ -50,7 +44,7 @@ gulp
 **production** - запускается при выполнении команды gulp --env=prod. Собирается в /local/templates/project_name/build/ или /bitrix/templates/project_name/build/ (пути для Bitrix), этот путь можно поменять в /gulp/config.js.
 Так же в production есть минификация стилей и js.
 
-### Как работаем
+### Важно
 
 **!!** Ни чего не меняем руками в папке build.
 
