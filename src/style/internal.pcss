@@ -1,83 +1,37 @@
 @import 'partials/partials.pcss';
 
-.browse-happy {
-    background: #fff;
-    padding: 20px 0;
-    text-align: center;
-
-    strong {
-        color: red;
-    }
-
-    &__notice {
-        font-size: 20px;
-    }
-
-    &__security {
-        font-size: 12px;
-    }
-
-    &__update {
-        font-size: 14px;
-    }
-
-    &__recommend {
-        font-size: 12px;
-    }
-}
-
-.wrap-main {
+.wrap{
     position: relative;
-    min-width: $tablet-lg-size-min;
     min-height: 100%;
     margin: 0 auto;
     z-index: 1;
-
-    @media (--mobile) {
-        background: #000;
-    }
+    overflow: hidden;
 
     @include clearfix;
 
-    b {
-        color: $cl-red;
-        font-size: 20px;
-    }
 }
-
-    .container {
-        min-width: $tablet-lg-size-min;
+.container {
+        max-width: 960px;
         margin: 0 auto;
-        padding: 0 $gutter;
-
-        @include clearfix;
-    }
-
-    .rub {
-        font-family: 'ruble';
-        line-height: 1;
-    }
+        padding: 0 10px;
+        position: relative;
+}
 
 @lost flexbox flex;
 
 .text-grid {
-    lost-flex-container: row;
     background: beige;
     padding-top: 30px;
+    &__list{
+       lost-flex-container: row;
 
+    }
     &__block {
         height: 90px;
         text-align: center;
-        lost-column: 1/2 0 10px;
+        lost-column: 1/3 2 15px;
         background: pink;
         margin-bottom: 30px;
-        &:nth-child(2){
-    	margin-right: 0; 
-    }
   }
     
-}
-
-#some-block {
-    color: #fff !important;
 }
