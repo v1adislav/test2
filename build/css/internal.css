@@ -2017,7 +2017,7 @@ $spacing\-: 16px;
 }
 
 .text-grid__block {
-    height: 90px;
+    height: 100px;
     text-align: center;
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
